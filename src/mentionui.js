@@ -149,7 +149,12 @@ export default class MentionUI extends Plugin {
 		super.destroy();
 
 		// Destroy created UI components as they are not automatically destroyed (see ckeditor5#1341).
-		this._mentionsView.destroy();
+		this._mentionsView && 		this._mentionsView.destroy();
+		this._mentionsView= null;
+
+		for ( const entry of this._mentionsConfigurations ) {
+			entry[ 1 ].watcher.destroy();
+		}
 	}
 
 	/**

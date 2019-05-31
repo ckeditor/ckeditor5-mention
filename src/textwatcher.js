@@ -35,6 +35,10 @@ export default class TextWatcher {
 		this._startListening();
 	}
 
+	destroy() {
+		this.stopListening();
+	}
+
 	/**
 	 * The last matched text.
 	 *
