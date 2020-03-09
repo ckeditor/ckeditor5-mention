@@ -1570,10 +1570,6 @@ describe( 'MentionUI', () => {
 
 			describe( 'on "execute" keys', () => {
 				testExecuteKey( 'enter', keyCodes.enter, feedItems );
-
-				testExecuteKey( 'tab', keyCodes.tab, feedItems );
-
-				testExecuteKey( 'space', keyCodes.space, feedItems );
 			} );
 		} );
 
@@ -1722,10 +1718,6 @@ describe( 'MentionUI', () => {
 
 				describe( 'on "execute" keys', () => {
 					testExecuteKey( 'enter', keyCodes.enter, issues );
-
-					testExecuteKey( 'tab', keyCodes.tab, issues );
-
-					testExecuteKey( 'space', keyCodes.space, issues );
 				} );
 			} );
 		} );
@@ -1847,10 +1839,6 @@ describe( 'MentionUI', () => {
 
 				describe( 'on "execute" keys', () => {
 					testExecuteKey( 'enter', keyCodes.enter, issues );
-
-					testExecuteKey( 'tab', keyCodes.tab, issues );
-
-					testExecuteKey( 'space', keyCodes.space, issues );
 				} );
 
 				describe( 'mouse', () => {
