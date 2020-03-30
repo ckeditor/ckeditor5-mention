@@ -33,6 +33,7 @@ const handledKeyCodes = [
 	keyCodes.arrowup,
 	keyCodes.arrowdown,
 	keyCodes.enter,
+	keyCodes.tab,
 	keyCodes.esc
 ];
 
@@ -119,7 +120,7 @@ export default class MentionUI extends Plugin {
 					this._mentionsView.selectPrevious();
 				}
 
-				if ( data.keyCode == keyCodes.enter ) {
+				if ( data.keyCode == keyCodes.enter || data.keyCode == keyCodes.tab ) {
 					this._mentionsView.executeSelected();
 				}
 
